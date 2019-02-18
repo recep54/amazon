@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *
+ *= require bootstrap/css/bootstrap
+ *= require fontawesome-free/css/all.min
+ *= require simple-line-icons/css/simple-line-icons
+ *
+ *= require landing-page
+ */
+
+header.masthead {
+  position: relative;
+  // background-color: #343a40;
+  background: url("bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/*.center{
+  background-color: red;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+*/
+.orga{
+  /*text-align: center;*/
+  display: flex;
+  flex-wrap: wrap;;
+
+    min-width: 300px !importants;
+  /*margin: auto;*/
+}
+
+.cardi{
+  margin: 10px;
+  min-width: 300px;
+}
+
+.search_page{
+  background-color: #f8f9fa !important;
+  width: 100% !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.taille{
+  min-width: 300px;
+}

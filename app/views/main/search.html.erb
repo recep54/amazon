@@ -1,0 +1,67 @@
+<div class="search_page">
+<!-- <h1>Hello</h1> -->
+<!-- <h1>@product</h1> -->
+
+
+
+
+
+<!-- </div> -->
+<div>
+<h2><%= @product.capitalize %></h2>
+<div class="card" style="width: 18rem;">
+    
+    <%= image_tag "img/bg-showcase-1.jpg", class:"card-img-top"%>
+    <div class="card-body">
+      <!-- <h5 class="card-title"><%= @product %></h5> -->
+      <p class="card-text">Description: Some quick example text to build on the card title and make up the card's content.</p>
+      <p><span>15,99€ + Livraison Gratuite</span><br/>
+      <a href="#" class="btn btn-primary">Voir le produit</a>       Amazon FR</p>
+        <p></p>
+        <p></p>
+      
+      <p><span>15,99€ + Livraison Gratuite</span><br/>
+      <a href="#" class="btn btn-primary">Voir le produit</a>       Amazon DE</p>
+        <p></p>
+        <p></p>
+
+      <p><span>15,99€ + Livraison Gratuite</span><br/>
+      <a href="#" class="btn btn-primary">Voir le produit</a>       Amazon ES</p>
+        <p></p>
+        <p></p>
+
+      <p><span>15,99€ + Livraison Gratuite</span><br/>
+      <a href="#" class="btn btn-primary">Voir le produit</a>       Amazon IT</p>
+        <p></p>
+        <p></p>
+
+
+
+    </div>
+
+  </div>
+
+
+<p></p>
+<hr>
+<h3> Nouvelle recherche</h3>
+<div class="card" style="width: 18rem;">
+              
+                <%= form_for :anything, url: "/search", method: :get do |f| %>
+                <!-- <input class="form-control form-control-lg" placeholder="Enter your email..."> -->
+                <%= f.text_field :name, class: "form-control form-control-lg" %>
+
+
+              
+              
+                <!-- <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button> -->
+                <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
+
+                
+            
+
+            </div>
+            <% end %>
+</div>
+
+</div>
